@@ -1,10 +1,10 @@
 export function createPyramid() {
-  var pyramidDisplay = document.getElementById('pyramidDisplay');
+  let pyramidDisplay = document.getElementById('pyramidDisplay');
   if (pyramidDisplay.style.display === 'block') {
     pyramidDisplay.style.display = 'none';
   } else {
-    var floors = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
-    var pyramid = '';
+    let floors = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+    let pyramid = '';
     for (var i = 1; i <= floors; i++) {
       pyramid += ' '.repeat(floors - i) + '#'.repeat(i) + '\n';
     }
