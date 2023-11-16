@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #e7dede;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 2em;
+}
+#codeDisplay {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  width: 18em;
+  margin-top: 0.8em;
+}
+
+.helloButton {
+ background-color: bisque;
+ border: orange 1px solid;
+ border-radius: 3px;
+ padding: 1em;
+ margin: 0.8em ;
+}
