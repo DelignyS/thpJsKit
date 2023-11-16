@@ -37,8 +37,13 @@ body{
 }
 #factorialDisplay {
   background-color: black;
+  border-radius: 3px;
   color: white;
-  padding: 1em;
-  margin: 1em;
+  padding: 10px;
+  border-radius: 5px; 
+  display: none;
+  margin-top: 0.8em;
+  font-size: 1.5em;
+  width:fit-content;
 }
 
