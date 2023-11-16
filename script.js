@@ -5,6 +5,7 @@ import { createPyramid } from './script_3.js';
 import { analyzeData } from './script_4.js';
 import { analyzeBooks } from './script_5.js';
 import { translateRNA } from './script_6.js';
+import { respondToUser } from './script_7.js';
 
 document.addEventListener('DOMContentLoaded', (event) => {
     displayHelloWorld();
@@ -25,8 +26,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
             dataDisplay.textContent = protein;
             dataDisplay.style.display = 'block';
         }
-    });
-    //
+      });
 
-    
+        const chatBotButton = document.getElementById('chatBotButton');
+        const chatBotDisplay = document.getElementById('chatBotDisplay');
+
+  chatBotButton.addEventListener('click', () => {
+    if (chatBotDisplay.style.display === 'block') {
+      chatBotDisplay.style.display = 'none';
+    } else {
+      const userInput = prompt("Parlez au bot :");
+      const botResponse = respondToUser(userInput);
+      console.log(botResponse);
+      chatBotDisplay.textContent = botResponse;
+      chatBotDisplay.style.display = 'block';
+    }
+  });
 });
